@@ -4,3 +4,115 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+
+:root.theme-light {
+  --font-family: "Inter-Variable", sans-serif;
+  --accent-font-family: "PressStart2P-Regular", sans-serif;
+  --font-weight: normal;
+  --title-font-weight: bold;
+  --background-color: #ffffff;
+  --accent-color: #000000;
+  --background-image: repeating-linear-gradient(
+      0deg,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(180deg, #e7e7e7 0px 0.01%, #1a1a1a);
+  --mix-color: #ffffff;
+  --red-color: rgba(255, 0, 0, 1);
+}
+
+.theme-light {
+  .video_road {
+    filter: grayscale(100%);
+  }
+}
+
+.theme-dark {
+  .img_now {
+    filter: hue-rotate(0.3turn) contrast(50%) saturate(150%) blur(1px);
+  }
+
+  .img_firstsptint {
+    filter: hue-rotate(0.3turn) saturate(25%);
+  }
+
+  .img_firstsptint_doubts {
+    filter: hue-rotate(0.05turn) saturate(120%);
+  }
+
+  .img_secondstsptint__beside {
+    filter: hue-rotate(0.3turn) invert(100%) saturate(75%);
+  }
+
+  .img_thirdsptint {
+    filter: hue-rotate(0.3turn) saturate(50%);
+  }
+
+  .img_thirdsptint__gloom {
+    filter: hue-rotate(0.15turn);
+  }
+}
+
+:root.theme-dark {
+  --font-family: "Inter-Variable", sans-serif;
+  --accent-font-family: "PressStart2P-Regular", sans-serif;
+  --background-color: #000000;
+  --accent-color: #00cc14;
+  --font-weight: 465;
+  --title-font-weight: 785;
+  --background-image: repeating-linear-gradient(
+      0deg,
+      #000 0,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      90deg,
+      #000 0,
+      #000 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(180deg, #007f0c, #004306);
+  --mix-color: #00cc14;
+  --red-color: rgba(255, 0, 0, 1);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --font-family: "Inter-Variable", sans-serif;
+    --accent-font-family: "PressStart2P-Regular", sans-serif;
+    --background-color: #000000;
+    --accent-color: #00cc14;
+    --font-weight: 465;
+    --title-font-weight: 785;
+    --background-image: repeating-linear-gradient(
+        0deg,
+        #000 0,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        90deg,
+        #000 0,
+        #000 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(180deg, #007f0c, #004306);
+    --mix-color: #00cc14;
+    --red-color: rgba(255, 0, 0, 1);
+  }
+}
