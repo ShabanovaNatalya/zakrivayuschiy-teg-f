@@ -49,7 +49,7 @@ body {
   scrollbar-gutter: stable;
 }
 
-.scroll-lock {
+body.modal-open {
   overflow: hidden;
 }
 
@@ -172,6 +172,10 @@ body {
   overflow: hidden;
   inline-size: 100%;
   aspect-ratio: 1;
+}
+
+img {
+  inline-size: 100%;
 }
 
 .img_firstsptint {
@@ -324,10 +328,8 @@ body {
 .dialog {
   position: fixed;
   inset: 0;
-  display: grid;
   border: none;
   padding: 0;
-  transition: opacity 0.3s ease-in-out;
 }
 
 .dialog:not([open]) {

@@ -1,10 +1,9 @@
-function openModalAndLockScroll({target: buttonOpener}) {
-  const dialogID = buttonOpener.getAttribute('aria-controls')
-  const dialogElement = document.querySelector(`#${dialogID}`)
-  dialogElement.showModal()
-  document.body.classList.add("scroll-lock")
+function openModal() {
+  document.body.classList.add('modal-open');
+  toggleBodyScroll(true);
 }
 
-function returnScroll() {
-  document.body.classList.remove("scroll-lock")
+function closeModal() {
+  document.body.classList.remove('modal-open');
+  toggleBodyScroll(false);
 }

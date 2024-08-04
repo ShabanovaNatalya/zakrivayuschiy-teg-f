@@ -723,21 +723,21 @@
     <footer class="footer">
       <button
         type="button"
-        onclick="openModalAndLockScroll(event)"
+        onClick="window['modal-example'].showModal(), openModal()"
         aria-controls="modal-example"
         class="footer__button button-style opener"
       >
         <svg class="icon-floppy">
-          <use href="/svg/floppy.svg#floppy"></use>
+          <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">Сохранить на память</span>
       </button>
     </footer>
 
-    <dialog id="modal-example" class="dialog" onclose="returnScroll()">
+    <dialog id="modal-example" class="dialog" onclose="closeModal()">
       <form method="dialog" class="dialog__form">
         <svg class="dialog__icon-floppy">
-          <use href="/svg/floppy.svg#floppy"></use>
+          <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
         <button class="close-button button-style">
