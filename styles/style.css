@@ -203,9 +203,9 @@ img {
 }
 
 .video_road {
+  filter: hue-rotate(0.25turn) saturate(300%);
   inline-size: 100%;
   block-size: 100%;
-  filter: hue-rotate(0.25turn) saturate(300%);
 }
 
 .card__label {
@@ -216,8 +216,10 @@ img {
   color: var(--accent-color, #000000);
   font-family: var(--accent-font-family, sans-serif);
   font-size: 14px;
-  text-shadow: -1px 0 var(--background-color, #ffffff), 0 1px var(--background-color, #ffffff),
-    1px 0 var(--background-color, #ffffff), 0 -1px var(--background-color, #ffffff);
+  text-shadow: -1px 0 var(--background-color, #ffffff),
+    0 1px var(--background-color, #ffffff),
+    1px 0 var(--background-color, #ffffff),
+    0 -1px var(--background-color, #ffffff);
   mix-blend-mode: hard-light;
   -webkit-text-stroke: 1px var(--background-color, #ffffff);
 }
