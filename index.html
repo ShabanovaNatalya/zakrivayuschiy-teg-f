@@ -57,14 +57,14 @@
           <div class="card__picture__conteiner">
             <picture class="card__picture">
               <source
-                srcset="./images/car-large.jpg 1x 700w, ./images/car-large-2x.jpg 2x 1400w"
+                srcset="./images/car-large.jpg 700w, ./images/car-large-2x.jpg 1400w"
+                sizes=" (min-width: 699px) 100vw, 1400px"
                 media="(min-width: 650px)"
-                sizes="700px, 1400px"
               />
               <img
                 src="./images/car-small.jpg"
                 srcset="./images/car-small.jpg 1x 375w, ./images/car-small-2x.jpg 2x 750w"
-                sizes="375px, 750px"
+                sizes="(max-width: 375px) 100wv, 750px"
                 alt="Картинка с машиной едет на фиолетовом фоне"
                 loading="lazy"
               />
