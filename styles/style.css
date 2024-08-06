@@ -283,7 +283,6 @@ img {
 .card__like-button:focus-visible {
   box-shadow: 2px 2px 0 0 var(--accent-color, #000000);
   transition: 0.3s ease;
-  transition: 0.3s;
 }
 
 .button-style::before {
@@ -322,6 +321,9 @@ img {
 
 .icon-floppy {
   z-index: 2;
+  display: block;
+  width: 23px;
+  height: 23px;
   color: var(--mix-color, #ffffff);
   mix-blend-mode: difference;
 }
@@ -394,12 +396,6 @@ img {
 }
 
 /* !!! */
-
-.icon-floppy {
-  display: block;
-  width: 23px;
-  height: 23px;
-}
 
 @media (width <= 375px) {
   .footer__button {
