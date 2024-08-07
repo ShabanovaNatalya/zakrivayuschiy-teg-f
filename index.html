@@ -18,10 +18,12 @@
   </head>
   <body class="page">
     <header class="header section">
-      <div class="header__block__title">
-        <h1 class="header__title">&lt;/HTML&gt;</h1>
-        <h2 class="header__subtitle">закрывающий тег</h2>
+
+      <div class="header__block-title">
+        <div class="header__decor">&lt;/HTML&gt;</div>
+        <h1 class="header__title">закрывающий тег</h1>
       </div>
+
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -48,13 +50,12 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <section class="content">
+    <main class="content">
         <article class="card">
           <h2 class="card__title">
             Фритрек и нулевой спринт: Подготовка&nbsp;к работе
           </h2>
-          <div class="card__picture__conteiner">
+          <figure class="card__picture__conteiner">
             <picture class="card__picture">
               <source
                 srcset="
@@ -75,8 +76,8 @@
                 loading="lazy"
               />
             </picture>
-            <span class="card__label">&lt;/HTML&gt;</span>
-          </div>
+            <figcaption class="card__label">&lt;/HTML&gt;</figcaption>
+          </figure>
           <div class="card__text">
             <p>
               Это было самое начало пути. На этом этапе важно было проникнуться
@@ -90,7 +91,7 @@
             </p>
           </div>
           <div class="card__button">
-            <button type="button" class="card__icon-button">
+            <button type="button" class="card__icon-button" aria-label="Кнопка лайка">
               <svg
                 class="like-icon"
                 viewBox="0 0 39 36"
@@ -133,7 +134,7 @@
         </article>
         <article class="card">
           <h2 class="card__title">1 спринт: Я — чистый лист</h2>
-          <div class="card__picture__conteiner">
+          <figure class="card__picture__conteiner">
             <picture class="card__picture">
               <source
                 srcset="
@@ -155,8 +156,8 @@
                 loading="lazy"
               />
             </picture>
-            <span class="card__label">&lt;/HTML&gt;</span>
-          </div>
+            <figcaption class="card__label">&lt;/HTML&gt;</figcaption>
+          </figure>
           <div class="card__text">
             <p>
               На первых этапах мы работали со страхами и сомнениями, которые
@@ -171,7 +172,7 @@
             </p>
           </div>
           <div class="card__button">
-            <button type="button" class="card__icon-button">
+            <button type="button" class="card__icon-button" aria-label="Кнопка лайка">
               <svg
                 class="like-icon"
                 viewBox="0 0 39 36"
@@ -214,7 +215,7 @@
         </article>
         <article class="card">
           <h2 class="card__title">1 спринт: А если не получится?</h2>
-          <div class="card__picture__conteiner">
+          <figure class="card__picture__conteiner">
             <picture class="card__picture">
               <source
                 srcset="
@@ -236,8 +237,8 @@
                 loading="lazy"
               />
             </picture>
-            <span class="card__label">&lt;css&gt;</span>
-          </div>
+            <figcaption class="card__label">&lt;css&gt;</figcaption>
+          </figure>
           <div class="card__text">
             <p>
               Первый проект — позади! Но это всё ещё самое начало пути. Радость
@@ -252,7 +253,7 @@
             </p>
           </div>
           <div class="card__button">
-            <button type="button" class="card__icon-button">
+            <button type="button" class="card__icon-button" aria-label="Кнопка лайка">
               <svg
                 class="like-icon"
                 viewBox="0 0 39 36"
@@ -295,7 +296,7 @@
         </article>
         <article class="card">
           <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
-          <div class="card__picture__conteiner">
+          <figure class="card__picture__conteiner">
             <video autoplay muted loop playsinline class="video_road">
               <source
                 src="https://shabanovanatalya.github.io/zakrivayuschiy-teg-f/video/road.webm"
@@ -306,8 +307,8 @@
                 type="video/mp4"
               />
             </video>
-            <span class="card__label">&lt;desigions&gt;</span>
-          </div>
+            <figcaption class="card__label">&lt;desigions&gt;</figcaption>
+          </figure>
           <div class="card__text">
             <p>
               Это было самое начало пути. На этом этапе важно было проникнуться
@@ -320,7 +321,7 @@
             <p>Дорога возникает под шагами идущего...</p>
           </div>
           <div class="card__button">
-            <button type="button" class="card__icon-button">
+            <button type="button" class="card__icon-button" aria-label="Кнопка лайка">
               <svg
                 class="like-icon"
                 viewBox="0 0 39 36"
@@ -364,7 +365,7 @@
 
         <article class="card">
           <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
-          <div class="card__picture__conteiner">
+          <figure class="card__picture__conteiner">
             <picture class="card__picture">
               <source
                 srcset="
@@ -387,8 +388,8 @@
                 loading="lazy"
               />
             </picture>
-            <span class="card__label">care</span>
-          </div>
+            <figcaption class="card__label">care</figcaption>
+          </figure>
           <div class="card__text">
             <p>
               Всё это время вы были не одиноки (хотя, возможно, иногда и
@@ -404,7 +405,7 @@
             </p>
           </div>
           <div class="card__button">
-            <button type="button" class="card__icon-button">
+            <button type="button" class="card__icon-button" aria-label="Кнопка лайка">
               <svg
                 class="like-icon"
                 viewBox="0 0 39 36"
@@ -448,7 +449,7 @@
 
         <article class="card">
           <h2 class="card__title">3 спринт: Обходные стратегии</h2>
-          <div class="card__picture__conteiner">
+          <figure class="card__picture__conteiner">
             <picture class="card__picture">
               <source
                 srcset="
@@ -471,8 +472,8 @@
                 loading="lazy"
               />
             </picture>
-            <span class="card__label">&lt;support&gt;</span>
-          </div>
+            <figcaption class="card__label">&lt;support&gt;</figcaption>
+          </figure>
           <div class="card__text">
             <p>
               На этом курсе вы постоянно решали разные задачи. В какой-то момент
@@ -485,7 +486,7 @@
             </p>
           </div>
           <div class="card__button">
-            <button type="button" class="card__icon-button">
+            <button type="button" class="card__icon-button" aria-label="Кнопка лайка">
               <svg
                 class="like-icon"
                 viewBox="0 0 39 36"
@@ -529,7 +530,7 @@
 
         <article class="card">
           <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
-          <div class="card__picture__conteiner">
+          <figure class="card__picture__conteiner">
             <picture class="card__picture">
               <source
                 srcset="
@@ -551,8 +552,8 @@
                 loading="lazy"
               />
             </picture>
-            <span class="card__label">&lt;lifes-style: none;&gt;</span>
-          </div>
+            <figcaption class="card__label">&lt;lifes-style: none;&gt;</figcaption>
+          </figure>
           <div class="card__text">
             <p>
               Во время учёбы часто возникает чувство, когда не знаешь, за что
@@ -567,7 +568,7 @@
             </p>
           </div>
           <div class="card__button">
-            <button type="button" class="card__icon-button">
+            <button type="button" class="card__icon-button" aria-label="Кнопка лайка">
               <svg
                 class="like-icon"
                 viewBox="0 0 39 36"
@@ -611,7 +612,7 @@
 
         <article class="card">
           <h2 class="card__title">«Сейчас я здесь»</h2>
-          <div class="card__picture__conteiner">
+          <figure class="card__picture__conteiner">
             <picture class="card__picture">
               <source
                 srcset="
@@ -633,8 +634,8 @@
                 loading="lazy"
               />
             </picture>
-            <span class="card__label">&lt;experience&gt;</span>
-          </div>
+            <figcaption class="card__label">&lt;experience&gt;</figcaption>
+          </figure>
           <div class="card__text">
             <p>
               Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
@@ -647,7 +648,7 @@
             <p>У самурая нет цели, только путь...</p>
           </div>
           <div class="card__button">
-            <button type="button" class="card__icon-button">
+            <button type="button" class="card__icon-button" aria-label="Кнопка лайка">
               <svg
                 class="like-icon"
                 viewBox="0 0 39 36"
@@ -688,7 +689,6 @@
             </button>
           </div>
         </article>
-      </section>
     </main>
 
     <footer class="footer">
@@ -711,12 +711,11 @@
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <p class="dialog__text">Вставьте дискету, чтобы продолжить</p>
-        <button class="close-button button-style">
+        <button type="button" class="close-button button-style">
           <span class="button__text">ОК</span>
         </button>
       </form>
     </dialog>
     <script src="./scripts/like.js"></script>
-    <script src="./scripts/modal-script.js"></script>
   </body>
 </html>

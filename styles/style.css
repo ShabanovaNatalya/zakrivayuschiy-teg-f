@@ -44,11 +44,6 @@
 
 /* !!! */
 
-html,
-body {
-  scrollbar-gutter: stable;
-}
-
 body.modal-open {
   overflow: hidden;
 }
@@ -58,6 +53,7 @@ body.modal-open {
   margin-inline: auto;
   color: var(--accent-color, #000000);
   font-family: var(--font-family, sans-serif);
+  font-weight: var(--font-weight);
   background-color: var(--background-color, #ffffff);
   background-image: var(--background-image);
   background-size: cover;
@@ -65,7 +61,6 @@ body.modal-open {
   min-inline-size: 375px;
   max-inline-size: 700px;
   min-block-size: 100dvb;
-  font-variation-settings: "wght" var(--font-weight);
 }
 
 .header {
@@ -86,14 +81,14 @@ body.modal-open {
   margin-block-end: 50px;
 }
 
-.header__block__title {
+.header__block-title {
   display: grid;
   grid-row: 2/3;
   gap: 20px;
   align-self: end;
 }
 
-.header__title {
+.header__decor {
   padding-block-start: clamp(0px, -5.63px + 1.5023vw, 16px);
   font-weight: 400;
   font-size: clamp(3.0625rem, 2.5723rem + 2.0915vw, 4.0625rem);
@@ -101,7 +96,7 @@ body.modal-open {
   text-transform: uppercase;
 }
 
-.header__subtitle {
+.header__title {
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   text-align: center;
   text-transform: uppercase;
@@ -239,6 +234,7 @@ img {
   margin: 25px 25px 21px 25px;
   font-weight: var(--font-weight);
   font-size: 18px;
+  line-height: 21px;
 }
 
 .card__button {
@@ -316,14 +312,14 @@ img {
   display: flex;
   align-items: center;
   gap: 8px;
-  padding: 15px;
+  padding: 15px 21px 15px 19px;
 }
 
 .icon-floppy {
   z-index: 2;
   display: block;
-  width: 23px;
-  height: 23px;
+  width: 21px;
+  height: 21px;
   color: var(--mix-color, #ffffff);
   mix-blend-mode: difference;
 }
@@ -403,12 +399,11 @@ img {
   }
 
   .icon-floppy {
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
   }
 
   .card__label {
-    position: absolute;
     right: 13px;
   }
 }

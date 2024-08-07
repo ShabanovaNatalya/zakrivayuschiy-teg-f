@@ -8,7 +8,13 @@
   box-sizing: border-box;
 }
 
+html,
 body {
+  scrollbar-gutter: stable;
+}
+
+body,
+figure  {
   margin: 0;
 }
 
