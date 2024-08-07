@@ -31,38 +31,6 @@
   --red-color: rgba(255, 0, 0, 1);
 }
 
-.theme-light {
-  .video_road {
-    filter: grayscale(100%);
-  }
-}
-
-.theme-dark {
-  .img_now {
-    filter: hue-rotate(0.3turn) contrast(50%) saturate(150%) blur(1px);
-  }
-
-  .img_firstsptint {
-    filter: hue-rotate(0.3turn) saturate(25%);
-  }
-
-  .img_firstsptint_doubts {
-    filter: hue-rotate(0.05turn) saturate(120%);
-  }
-
-  .img_secondstsptint__beside {
-    filter: hue-rotate(0.3turn) invert(100%) saturate(75%);
-  }
-
-  .img_thirdsptint {
-    filter: hue-rotate(0.3turn) saturate(50%);
-  }
-
-  .img_thirdsptint__gloom {
-    filter: hue-rotate(0.15turn);
-  }
-}
-
 :root.theme-dark {
   --font-family: "Inter-Variable", sans-serif;
   --accent-font-family: "PressStart2P-Regular", sans-serif;
