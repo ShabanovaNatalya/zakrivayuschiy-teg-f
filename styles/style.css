@@ -38,8 +38,8 @@
 .card__title {
   padding-inline-start: 10px;
   padding-block: 5px;
-  font-weight: var(--title-font-weight, bold);
   font-size: 18px;
+  font-variation-settings: "wght" var(--title-font-weight);
 }
 
 /* !!! */
@@ -53,7 +53,6 @@ body.modal-open {
   margin-inline: auto;
   color: var(--accent-color, #000000);
   font-family: var(--font-family, sans-serif);
-  font-weight: var(--font-weight);
   background-color: var(--background-color, #ffffff);
   background-image: var(--background-image);
   background-size: cover;
@@ -61,6 +60,7 @@ body.modal-open {
   min-inline-size: 375px;
   max-inline-size: 700px;
   min-block-size: 100dvb;
+  font-variation-settings: "wght" var(--font-weight);
 }
 
 .header {
@@ -197,8 +197,16 @@ img {
   filter: saturate(60%);
 }
 
+.card__video-conteiner {
+  position: relative;
+  box-sizing: border-box;
+  border-block: 2px solid var(--accent-color, #000000);
+}
+
 .video_road {
-  filter: hue-rotate(0.25turn) saturate(300%);
+  object-fit: cover;
+  overflow: hidden;
+  filter: grayscale(60%);
   inline-size: 100%;
   block-size: 100%;
 }
